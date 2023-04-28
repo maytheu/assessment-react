@@ -7,7 +7,11 @@ export const flightApi = createApi({
 
   endpoints: (build) => ({
     loadFlight: build.query({
-      url: (begin, end) => `/all?begin=${begin}&end=${end}`,
+      query: () => {
+        const end = Math.floor(Date.now() / 1000);
+        const begin = end - 7200;
+        return `/all?begin=${begin}&end=${end}`;
+      },
     }),
   }),
 });
