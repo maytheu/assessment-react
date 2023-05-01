@@ -1,9 +1,8 @@
 import { useLoadFlightQuery } from "../../store/flightApi";
 import { Table } from "../../common/sharedComponent";
-import { useState } from "react";
 
 const Dashboard = () => {
-  const { data: flight, isError, isSuccess, isLoading } = useLoadFlightQuery();
+  const { data: flight, isError,  isLoading } = useLoadFlightQuery();
   const columns = [
     { Header: "departure airpoort", accessor: "estDepartureAirport" },
     { Header: "arrival airpoort", accessor: "estArrivalAirport" },

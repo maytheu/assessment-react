@@ -107,7 +107,7 @@ const Table = ({ columns, data }) => {
             </ButtonPage>
           </div>
 
-          <select
+          <select className="bloc w-1/3 rounded-md border-0 py-1.5  sm:max-w-xs"
             value={pageSize}
             onChange={(e) => {
               setPageSize(Number(e.target.value));
