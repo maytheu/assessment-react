@@ -18,3 +18,5 @@ You may also see any lint errors in the console.
 ## Guide and Usage
 
 User can log in with any credentials provided the username field is not empty and password is equal or greater than 6 characters
+
+Since opensky Api alllows two hours data difference, the data return is in the past two hours
