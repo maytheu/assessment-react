@@ -5,8 +5,9 @@ const Dashboard = () => {
   const { data: flight, isError,  isLoading } = useLoadFlightQuery();
   const columns = [
     { Header: "departure airpoort", accessor: "estDepartureAirport" },
+    { Header: "departure time", accessor: "firstSeen" },
     { Header: "arrival airpoort", accessor: "estArrivalAirport" },
-    { Header: "time", accessor: "lastSeen" },
+    { Header: "arrival time", accessor: "lastSeen" },
     { Header: "departure count", accessor: "departureAirportCandidatesCount" },
     { Header: "arrival count", accessor: "arrivalAirportCandidatesCount" },
   ];
