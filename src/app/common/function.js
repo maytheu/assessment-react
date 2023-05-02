@@ -6,7 +6,6 @@ export const timeFormat = (timeStamp) => {
 
   const offsetMinutes = date.getTimezoneOffset();
   const offsetHours = offsetMinutes / 60;
-  const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   return `${(hours % 12).toString().padStart(2, "0")}:${minutes
     .toString()
